@@ -1,0 +1,102 @@
+1) ------ API FOR User Registeration ------
+
+   url : localhost:8000/api/register/
+   method : post
+   data : {username , email , password1,password2}
+   authentication : nill
+   status : completed
+
+2) ------ API FOR User Profile  ------
+
+   2.1) Profile Update
+        url : localhost:8000/api/profiles/{id}/
+        method : post
+        data : {profile_pic,name,bio,address,phone,dob,}
+        authentication : {username , password}
+        status : completed
+
+   2.2) Profile Detail
+        url : localhost:8000/api/profiles/{id}/
+        method : get
+        data : nill
+        authentication : {username , password}
+        status : completed
+
+   2.3) Profile List
+        url : localhost:8000/api/profiles/all/
+        method : get
+        data : nill
+        authentication : {username , password}
+        status : completed
+
+4) ------ API FOR Home Page  ------
+        
+   url : localhost:8000/api/home/
+        method : get
+        data : nill
+        authentication : {username , password}
+        status : completed
+
+5) ------ API FOR User Follow  ------
+
+   url : localhost:8000/api/profiles/{id}/follow/
+        method : post
+        data : {action = follow/unfollow}
+        authentication : {username , password}
+        status : completed 
+
+6) ------ API FOR User Block  ------
+
+   url : localhost:8000/api/profiles/{id}/block/
+        method : post
+        data : {action = block/unblock}
+        authentication : {username , password}
+        status : completed
+
+7) ------ API FOR Uploading Posts  ------
+
+   url : localhost:8000/api/posts/add/
+        method : post
+        data : {title, content}
+        authentication : {username , password}
+        status : completed 
+
+8) ------ API FOR Uploading Stories  ------
+
+   url : localhost:8000/api/stories/add/
+        method : post
+        data : {post_content, text_content}
+        authentication : {username , password}
+        status : completed
+
+9) ------ API FOR post like & save  ------
+
+   url : localhost:8000/api/posts/{id}/likesave/
+        method : post
+        data : nill
+        authentication : {username , password}
+        status : completed 
+
+10) ------ API FOR post comment  ------
+
+   url : localhost:8000/api/posts/{id}/comments/add/
+        method : post
+        data : {text}
+        authentication : {username , password}
+        status : completed
+
+11) ------ API FOR post delete  ------
+
+   url : localhost:8000/api/posts/{id}/
+        method : delete
+        data : nill
+        authentication : {username , password}
+        status : completed
+
+12) ------ API FOR Search user  ------
+
+   url : localhost:8000/api/search/
+        method : post
+        data : {username}
+        authentication : {username , password}
+        status : completed
